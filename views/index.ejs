@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap">
+</head>
+<body>
+    <h1>The Joke App</h1>
+    <% if (!locals.content) { %>
+        <div>
+            <p class="opening">Choose your Joke type =></p>
+        </div>
+    <% } else { %>
+        <div>
+            <p><%= locals.content %></p>
+        </div>
+    <% } %>
+    <form action="/submit" method="get">
+        <select class="dropdown" name="choice">
+            <option value="Programming"  <%= locals.selectedChoice === 'Programming' ? 'selected' : '' %>>Programming</option>
+            <option value="Pun"  <%= locals.selectedChoice === 'Pun' ? 'selected' : '' %>>Pun</option>
+            <option value="Misc"  <%= locals.selectedChoice === 'Misc' ? 'selected' : '' %>>Misc</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+      
+</body>
+</html>
