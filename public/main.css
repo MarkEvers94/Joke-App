@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(42, 42, 194);
+}
+
+h1 {
+    font-family: 'Honk', sans-serif;
+    font-size: 75px;
+}
+
+div {
+    height: 30rem;
+    width: 25rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, yellow, rgb(250, 83, 83));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    width: 25rem;
+    font-family: "Gloria Hallelujah", cursive;
+    margin: 40px;
+}
+
+.opening {
+    width: 25rem;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 50px;
+    margin: 40px;
+}
+
+
+/* Style the dropdown box */
+.dropdown {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+  }
+
+  button {
+    width: 100px;
+    margin: 10px;
+    margin-left: 80px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Customize the dropdown options */
+  .dropdown option {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+  }
+  
+  /* Hover effect for the dropdown */
+  .dropdown:hover {
+    border-color: #007bff;
+  }
+  
+  /* Customize the dropdown arrow */
+  .dropdown {
+    appearance: none; /* Removes default arrow */
+    background-image: url('data:image/svg+xml;base64,<your-encoded-arrow-icon>'); 
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+  }
+  
+
